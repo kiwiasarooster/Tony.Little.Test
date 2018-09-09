@@ -1,9 +1,11 @@
-package wishlisttest;
+package wishListTests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 //comment the line above and uncomment line below to use Chrome
 //import org.openqa.selenium.chrome.ChromeDriver;
+
+import wishlisttest.pageObjects;
 
 public class wishListMain {
 
