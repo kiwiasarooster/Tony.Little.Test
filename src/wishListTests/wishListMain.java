@@ -1,9 +1,13 @@
-package wishlisttest;
+package wishListTests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 //comment the line above and uncomment line below to use Chrome
 //import org.openqa.selenium.chrome.ChromeDriver;
+
+import wishlisttest.searchPage;
+import wishlisttest.productPage;
+import wishlisttest.wishListPage;
 
 public class wishListMain {
 
@@ -27,7 +31,7 @@ public class wishListMain {
 	        driver.get(baseUrl);
 
 	        // Click on a random product and go to product page
-	        pageObjects.clickOnProd(driver).click();
+	        searchPage.clickOnProd(driver).click();
 	        
 	        // Wait for page to load
 	    	 
@@ -38,7 +42,7 @@ public class wishListMain {
 			}
 	        
 	         // Add product to Wish List
-	    	pageObjects.addToWishList(driver).click();
+	    	productPage.addToWishList(driver).click();
 
 	        // Wait for page to load
     	 
@@ -49,13 +53,13 @@ public class wishListMain {
 			}
 	         
 	    	// Click Wish List link and go to Wish List page
-	    	pageObjects.checkWishList(driver).click();
+	    	wishListPage.checkWishList(driver).click();
 	              
 	         /*
 	          * compare the wish list with the expected one and print
 	          * the result as "Passed" or "Failed"
 	         */
-	         if (pageObjects.verifyWishList(driver) != null){
+	         if (wishListPage.verifyWishList(driver) != null){
 	             System.out.println("Test Passed!");
 	         } else {
 	             System.out.println("Test Failed");
