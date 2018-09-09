@@ -22,9 +22,10 @@ pageObjects.java - contain the methods to find page objects
 -----------------
 Instructions:
 
-1. Unzip Wish List.zip
-2. Import Wish List folder into Eclipse or similar IDE
-3. In wishListMain.java, instructions are shown to:
+1. Import Wish List folder into Eclipse or similar IDE
+2. In the package wishListTests, in the file wishListMain.java, instructions are shown to:
 	A. Alter the browser to Chrome.
 	B. Alter the path for Gecko if the Gecko folder is not on the system path environment variable.
 	C. Change the test environment.
+3. Run wishListMain to run test.
+4. Test Passed or Test failed will show on console.
