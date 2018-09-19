@@ -52,7 +52,7 @@ public class wishListMain {
     
 	         	// See if a value is returned and print result as "Passed" or "Failed"
 	         
-	         if (pageObjects.returnElement(driver, testData.prodName) != null){
+	         if (pageObjects.returnElement(driver, testData.prodName) == testData.prodName){
 	             System.out.printf("Test Passed! ");
 	         } else {
 	             System.out.println("Test Failed");
