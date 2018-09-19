@@ -3,7 +3,7 @@ Automation coding demo
 Wish List Test project using Page Object Model
 
 Written by: Tony Little
-Date 9th September 2018
+Date 20th September 2018
 
 Written in Java using the following environment:
 
@@ -16,7 +16,7 @@ Java SE JRE 18.3
 Contains two packages:
 
 
-wishlisttest contains the Page Obect Class files
+wishListPages contains the Page Obect Class files
 
 wishListTests - contains the test method.  
 
